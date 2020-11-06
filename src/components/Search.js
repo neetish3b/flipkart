@@ -18,9 +18,10 @@ class Search extends Component {
                 fkAffiliateToken : 'a012d9b566634a94817b090a424f03fc'
             }
         }
-        const searchUrl =  `https://affiliate-api.flipkart.net/affiliate/1.0/search.json?query=${query}`;
-        console.log(searchUrl)
+        const searchUrl =  `https://affiliate-api.flipkart.net/affiliate/1.0/search.jsonp?query=${query}`;
         
+        console.log(searchUrl)
+         
     axios.get(searchUrl, config, {cancelToken: this.cancel}).then((res) => {
         const resultNotFoundMsg = !res.data.hits.length
 				? 'There are no more search results. Please try a new search.'
