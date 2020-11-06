@@ -15,11 +15,11 @@ class Search extends Component {
         const config = {
             headers: {
 
-                'Access-Control-Allow-Origin': '*',
-                      'Access-Control-Allow-Methods' : 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-
+                // 'Access-Control-Allow-Origin': '*',
+                // 'Access-Control-Allow-Credentials': 'true',
+                // 'Access-Control-Allow-Methods' : 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
                 'Fk-Affiliate-Id': 'neetish2g',
-                'Fk-Affiliate-Token' : 'bafd5d204ccc444ca7cf709c272a0d26'
+                'Fk-Affiliate-Token' : 'bafd5d204ccc444ca7cf709c272a0d26',
             }
         }
         const searchUrl =  `https://affiliate-api.flipkart.net/affiliate/1.0/search.json?query=${query}`;
