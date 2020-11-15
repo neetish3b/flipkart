@@ -1,0 +1,48 @@
+*{
+    font-family: 'Rajdhani', sans-serif;
+}
+.input-box input{
+    margin-top:20px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+}
+.card:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card-img-top {
+  max-height: inherit;
+}
+.image-container {
+  min-height: 28rem;
+  padding: 10px;
+}
+.product-discount {
+   position: absolute;
+   top: 0;
+   left: 0;
+   color: #fff;
+   border: 1px solid white;
+   font-size: 15px;
+   border-radius: 100% 0% 100% 0% / 0% 47% 53% 100% ;
+   padding: 10px;
+   text-align: center;
+   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.loader {
+  border: 50px solid #f3f3f3; /* Light grey */
+  border-top: 50px solid red; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.8s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
